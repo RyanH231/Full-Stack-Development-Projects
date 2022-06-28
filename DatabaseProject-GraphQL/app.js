@@ -16,7 +16,7 @@ app.use("/graphql", graphqlHTTP({
     graphiql:true
 }));
 
-mongoose.connect("mongodb+srv://Ryan:G001tske@cluster0.yigwizs.mongodb.net/BookDatabase");
+mongoose.connect("mongodb+srv://<User>:<Password>@cluster0.yigwizs.mongodb.net/BookDatabase");
 mongoose.connection.once('open', function()
 {
     console.log("Connected with mongoose");
